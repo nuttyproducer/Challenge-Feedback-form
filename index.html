@@ -8,7 +8,7 @@
   </head>
   <body>
    <main>
-    <h1>We want your feedback!</h1>
+      <h1>We want your feedback!</h1>
 
     <p>We're very excited that you visited the little house in the woods,
     and we want to hear what you thought of it! Please fill in the below
@@ -16,31 +16,33 @@
     if you do, we'll enter you into a prize draw where you'll have a chance
     to win prizes.</p>
 
+    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800" alt="A forest in the woods" />
+
    <form>
     <section>
       <h2>Facilities</h2>
 
       <fieldset>
         <legend>Was the porridge</legend>
-        <input type="radio" id="too-hot" name="porridge" value="too-hot" checked />  <!-- 3 Radio buttons in line (first radio button selected) -->
-        <label for="too-hot">Too hot?</label>
-        <input type="radio"id="too-cold" name="porridge" value="too-cold" />
-        <label for="too-cold">Too cold?</label>
-        <input type="radio"id="just-right" name="porridge" value="just-right" />
-        <label for="just-right">Just right?</label>
+        <input type="radio" id="porridge-too-hot" name="porridge" value="too-hot" checked />
+        <label for="porridge-too-hot">Too hot?</label>
+        <input type="radio" id="porridge-too-cold" name="porridge" value="too-cold" />
+        <label for="porridge-too-cold">Too cold?</label>
+        <input type="radio" id="porridge-just-right" name="porridge" value="just-right" />
+        <label for="porridge-just-right">Just right?</label>
       </fieldset>
       <fieldset>
         <legend>Were the beds</legend>
-        <input type="radio" id="too-hard" name="beds" value="too-hard" checked />  <!-- 3 Radio buttons in line (first radio button selected) -->
-        <label for="too-hard">Too hard?</label>
-        <input type="radio" id="too-soft" name="beds" value="too-soft" >
-        <label for="too-soft">Too soft?</label>
-        <input type="radio" id="just-right" name="beds" value="just-right" >
-        <label for="just-right">Just right?</label> <!-- double id needs a fix -->
+        <input type="radio" id="beds-too-hard" name="beds" value="too-hard" checked />
+        <label for="beds-too-hard">Too hard?</label>
+        <input type="radio" id="beds-too-soft" name="beds" value="too-soft" >
+        <label for="beds-too-soft">Too soft?</label>
+        <input type="radio" id="beds-just-right" name="beds" value="just-right" >
+        <label for="beds-just-right">Just right?</label>
       </fieldset>
       <fieldset>
         <legend>Describe the chairs (select all you agree with)</legend>
-        <input type="checkbox" id="comfy" name="chairs" value="comfy" />  <!-- 5 checkboxes with label and legend -->
+        <input type="checkbox" id="comfy" name="chairs" value="comfy" />
         <label for="comfy">comfy</label>
         <input type="checkbox" id="luxurious" name="chairs" value="luxurious" />
         <label for="luxurious">Luxurious</label>
@@ -54,31 +56,30 @@
     </section>
     <section>
       <h2>About your hosts</h2>
-       <div class="separator">  <!-- Add class for separator -->
-        <label for="favorite-bear"> Who's your favorite bear?</label>
-        <select id="favorite-bear" name="favorite-bear">   <!-- Dropdown menu with 4 options and a main text and labels -->
-        <option>Papa bear</option>
-        <option>Mama bear</option>
-        <option>Junior</option>
-        <option>Dozer</option>
+       <div class="separator"> 
+        <label for="favorite-bear">Who's your favorite bear?</label>
+        <select id="favorite-bear" name="favorite-bear">
+          <option>Papa bear</option>
+          <option>Mama bear</option>
+          <option>Junior</option>
+          <option>Dozer</option>
         </select>
        </div>
        <div class="separator">
         <label for="prefered-greeting">Which greeting did you prefer?</label>
-        <select id="prefered-greeting" name="prefered-greeting" >   <!-- Dropdown menu with 4 options and a main text and labels -->
-        <option>Wave</option>
-        <option>Friendly greeting</option>
-        <option>Growl</option>
-        <option>Claw marks in the door</option>
+        <select id="prefered-greeting" name="prefered-greeting" >
+          <option>Wave</option>
+          <option>Friendly greeting</option>
+          <option>Growl</option>
+          <option>Claw marks in the door</option>
         </select>
        </div>
     </section>
     <section>
       <h2>Any other feedback?</h2>
-
         <label for="comments">Give us your comments</label>
-        <textarea id="comments" name="comments" ></textarea> <!-- Add multi-line text entry box / existing line into its descriptive label -->
-    </section> 
+        <textarea id="comments" name="comments" ></textarea>
+    </section>
     <section>       
       <h2>Your details</h2>
        <div class="separator">
@@ -94,7 +95,7 @@
           <input type="tel" id="phone" name="phone">
        </div>
     </section> 
-        <button>Submit</button><!-- Turn submit into a submit button -->
+        <button>Submit</button>
    </form>
    </main>
   </body>

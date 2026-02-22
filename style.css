@@ -53,13 +53,14 @@ fieldset,
   margin-bottom: 40px;
 }
 
-img {
+.decorative-banner {
   display: block;
   margin: 20px auto;
   width: 100%;
-  max-width: 100%;
   height: 50px;
-  object-fit: cover;
+  background-image: url("https://mdn.github.io/shared-assets/images/examples/learn/woodland-strip.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 /* Individual form items */

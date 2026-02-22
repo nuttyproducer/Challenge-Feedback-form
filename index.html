@@ -7,77 +7,76 @@
     <script defer src="index.js"></script>
   </head>
   <body>
-    We want your feedback! <!-- Add H1 -->
+   <main>
+    <h1>We want your feedback!</h1> <!-- Add H1 -->
 
-    We're very excited that you visited the little house in the woods,
+    <p>We're very excited that you visited the little house in the woods,
     and we want to hear what you thought of it! Please fill in the below
     sections. You don't need to provide your name or contact details, but
     if you do, we'll enter you into a prize draw where you'll have a chance
-    to win prizes.
+    to win prizes.</p>
 
-    --
+   <form>
+    <section>
+      <h2>Facilities</h2> <!-- Add H2 -->
 
-    Facilities <!-- Add H2 -->
+        <!-- 3 Radio buttons in line (first radio button selected) -->
+      <fieldset>
+        <legend>Was the porridge</legend>
+        Too hot?
+        Too cold?
+        Just right?
+      </fieldset>
+        <!-- 3 Radio buttons in line (first radio button selected) -->
+      <fieldset>
+        <legend>Were the beds</legend>
+        Too hard?
+        Too soft?
+        Just right?
+      </fieldset>
+        <!-- 5 checkboxes with label and legend -->
+      <fieldset>
+        <legend>Describe the chairs (select all you agree with)</legend>
+        Comfy
+        Luxurious
+        Hi tec
+        Pretty
+        Majestic
+      </fieldset>
+    </section>
+    <section>
+      <h2>About your hosts</h2> <!-- Add H2 -->
 
-    <!-- 3 Radio buttons in line (first radio button selected) -->
-    Was the porridge 
-    Too hot?
-    Too cold?
-    Just right?
+        <!-- Dropdown menu with 4 options and a main text and labels -->
+        Who's your favorite bear?
+        Papa bear
+        Mama bear
+        Junior
+        Dozer
+      
+        <!-- Dropdown menu with 4 options and a main text and labels -->
+        Which greeting did you prefer?
+        Wave
+        Friendly greeting
+        Growl
+        Claw marks in the door
+    </section>
+    <section>
+        <h2>Any other feedback?</h2> <!-- Add H2 -->
 
-    <!-- 3 Radio buttons in line (first radio button selected) -->
-    Were the beds
-    Too hard?
-    Too soft?
-    Just right?
+        <!-- Add multi-line text entry box / existing line into its descriptive label -->
+        Give us your comments
 
-    <!-- 5 checkboxes with label and legend -->
-    Describe the chairs (select all you agree with)
-    Comfy
-    Luxurious
-    Hi tec
-    Pretty
-    Majestic
+        <h2>Your details</h2> <!-- Add H2 -->
 
-    --
-
-    About your hosts <!-- Add H2 -->
-
-    <!-- Dropdown menu with 4 options and a main text and labels -->
-    Who's your favorite bear?
-    Papa bear
-    Mama bear
-    Junior
-    Dozer
-
-    <!-- Dropdown menu with 4 options and a main text and labels -->
-    Which greeting did you prefer?
-    Wave
-    Friendly greeting
-    Growl
-    Claw marks in the door
-
-    --
-
-    Any other feedback? <!-- Add H2 -->
-
-    <!-- Add multi-line text entry box / existing line into its descriptive label -->
-    Give us your comments
-
-    --
-
-    Your details <!-- Add H2 -->
-
-    <!-- add a suitable type of text input to collect each of the three listed values. Turn the existing lines into labels -->
-    Name
-    Email
-    Phone
-
-    --
-
-    <!-- Turn submit into a submit button -->
-    Submit
-
-    --
+        <!-- add a suitable type of text input to collect each of the three listed values. Turn the existing lines into labels -->
+        Name
+        Email
+        Phone
+    </section>
+        <!-- Turn submit into a submit button -->
+        Submit
+   </form>
+   </main>
   </body>
 </html>

@@ -28,7 +28,7 @@ h2 {
 }
 
 p {
-  color: gray;
+  /* used #333333 for accessability reasons */
   margin: 0.5em 0;
 }
 
@@ -99,7 +99,7 @@ button {
   border: 1px solid grey;
   background-color: #dddddd;
   width: 50%;
-  margin: 0 auto;
+  margin: 20px auto;
   display: block;
 }
 

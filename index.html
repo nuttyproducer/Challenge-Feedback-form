@@ -18,32 +18,29 @@
 
    <form>
     <section>
-      <h2>Facilities</h2> <!-- Add H2 -->
+      <h2>Facilities</h2>  
 
-        <!-- 3 Radio buttons in line (first radio button selected) -->
       <fieldset>
         <legend>Was the porridge</legend>
-        <input type="radio"id="too-hot" name="porridge" value="too-hot" checked />
+        <input type="radio"id="too-hot" name="porridge" value="too-hot" checked />  <!-- 3 Radio buttons in line (first radio button selected) -->
         <label for="too-hot">Too hot?</label>
         <input type="radio"id="too-cold" name="porridge" value="too-cold" />
         <label for="too-cold">Too cold?</label>
         <input type="radio"id="just-right" name="porridge" value="just-right" />
         <label for="just-right">Just right?</label>
       </fieldset>
-        <!-- 3 Radio buttons in line (first radio button selected) -->
       <fieldset>
         <legend>Were the beds</legend>
-        <input type="radio" id="too-hard" name="beds" value="too-hard" checked />
+        <input type="radio" id="too-hard" name="beds" value="too-hard" checked />  <!-- 3 Radio buttons in line (first radio button selected) -->
         <label for="too-hard">Too hard?</label>
         <input type="radio" id="too-soft" name="beds" value="too-soft" >
         <label for="too-soft">Too soft?</label>
         <input type="radio" id="just-right" name="beds" value="just-right" >
         <label for="just-right">Just right?</label>
       </fieldset>
-        <!-- 5 checkboxes with label and legend -->
       <fieldset>
         <legend>Describe the chairs (select all you agree with)</legend>
-        <input type="checkbox" id="comfy" name="chairs" value="comfy" />
+        <input type="checkbox" id="comfy" name="chairs" value="comfy" />  <!-- 5 checkboxes with label and legend -->
         <label for="comfy">comfy</label>
         <input type="checkbox" id="luxurious" name="chairs" value="luxurious" />
         <label for="luxurious">Luxurious</label>
@@ -56,40 +53,44 @@
       </fieldset>
     </section>
     <section>
-      <h2>About your hosts</h2> <!-- Add H2 -->
+      <h2>About your hosts</h2>
 
-        <!-- Dropdown menu with 4 options and a main text and labels -->
         <label for="favorite-bear"> Who's your favorite bear?</label>
-        <select id="favorite-bear" name="favorite-bear">
+        <select id="favorite-bear" name="favorite-bear">   <!-- Dropdown menu with 4 options and a main text and labels -->
           <option>Papa bear</option>
           <option>Mama bear</option>
           <option>Junior</option>
           <option>Dozer</option>
         </select>
-        <!-- Dropdown menu with 4 options and a main text and labels -->
+
         <label for="prefered-greeting">Which greeting did you prefer?</label>
-        <select id="prefered-greeting" name="prefered-greeting" >
+        <select id="prefered-greeting" name="prefered-greeting" >   <!-- Dropdown menu with 4 options and a main text and labels -->
           <option>Wave</option>
           <option>Friendly greeting</option>
           <option>Growl</option>
           <option>Claw marks in the door</option>
         </select>
+
     </section>
     <section>
-        <h2>Any other feedback?</h2> <!-- Add H2 -->
+          <h2>Any other feedback?</h2>
 
-        <!-- Add multi-line text entry box / existing line into its descriptive label -->
-        Give us your comments
+          <label for="comments">Give us your comments</label>
+          <textarea id="comments" name="comments" ></textarea> <!-- Add multi-line text entry box / existing line into its descriptive label -->
 
-        <h2>Your details</h2> <!-- Add H2 -->
+          <h2>Your details</h2>
 
-        <!-- add a suitable type of text input to collect each of the three listed values. Turn the existing lines into labels -->
-        Name
-        Email
-        Phone
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+          <br>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <br>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone">
     </section>
         <!-- Turn submit into a submit button -->
-        Submit
+        <button>Submit</button>
    </form>
    </main>
   </body>

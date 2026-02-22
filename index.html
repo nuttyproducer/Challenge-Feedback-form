@@ -8,7 +8,7 @@
   </head>
   <body>
    <main>
-    <h1>We want your feedback!</h1> <!-- Add H1 -->
+    <h1>We want your feedback!</h1>
 
     <p>We're very excited that you visited the little house in the woods,
     and we want to hear what you thought of it! Please fill in the below
@@ -36,7 +36,7 @@
         <input type="radio" id="too-soft" name="beds" value="too-soft" >
         <label for="too-soft">Too soft?</label>
         <input type="radio" id="just-right" name="beds" value="just-right" >
-        <label for="just-right">Just right?</label>
+        <label for="just-right">Just right?</label> <!-- double id needs a fix -->
       </fieldset>
       <fieldset>
         <legend>Describe the chairs (select all you agree with)</legend>
@@ -54,7 +54,7 @@
     </section>
     <section>
       <h2>About your hosts</h2>
-
+       <div class="separator">  <!-- Add class for separator -->
         <label for="favorite-bear"> Who's your favorite bear?</label>
         <select id="favorite-bear" name="favorite-bear">   <!-- Dropdown menu with 4 options and a main text and labels -->
           <option>Papa bear</option>
@@ -62,7 +62,8 @@
           <option>Junior</option>
           <option>Dozer</option>
         </select>
-
+       </div>
+       <div class="separator">
         <label for="prefered-greeting">Which greeting did you prefer?</label>
         <select id="prefered-greeting" name="prefered-greeting" >   <!-- Dropdown menu with 4 options and a main text and labels -->
           <option>Wave</option>
@@ -70,27 +71,30 @@
           <option>Growl</option>
           <option>Claw marks in the door</option>
         </select>
-
+       </div>
     </section>
     <section>
           <h2>Any other feedback?</h2>
 
           <label for="comments">Give us your comments</label>
           <textarea id="comments" name="comments" ></textarea> <!-- Add multi-line text entry box / existing line into its descriptive label -->
-
+    </section> 
+    <section>       
           <h2>Your details</h2>
-
+       <div class="separator">
           <label for="name">Name</label>
           <input type="text" id="name" name="name">
-          <br>
+       </div>
+       <div class="separator">
           <label for="email">Email</label>
           <input type="email" id="email" name="email">
-          <br>
+       </div>
+       <div class="separator">
           <label for="phone">Phone</label>
           <input type="tel" id="phone" name="phone">
-    </section>
-        <!-- Turn submit into a submit button -->
-        <button>Submit</button>
+       </div>
+    </section> 
+        <button>Submit</button><!-- Turn submit into a submit button -->
    </form>
    </main>
   </body>

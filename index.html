@@ -18,7 +18,7 @@
 
     <div class="decorative-banner" role="presentation"></div> <!-- Used role presentation so screen readers will ignore this image -->
                                                               <!-- Also, an image as background CSS doesn't have an alt="" -->
-   <form>
+   <form action="#"> <!-- added a realistic "action" to the form -->
     <section class="form-section">
       <h2>Facilities</h2>
 
@@ -78,7 +78,6 @@
     <section class="form-section">
       <h2>Any other feedback?</h2>
         <label for="comments">Give us your comments</label>
-          <br>
         <textarea id="comments" name="comments" ></textarea>
     </section>
     <section class="form-section">       
@@ -96,7 +95,7 @@
           <input type="tel" id="phone" name="phone">
        </div>
     </section> 
-        <button>Submit</button>
+        <button type="submit">Submit</button>
    </form>
    </main>
   </body>

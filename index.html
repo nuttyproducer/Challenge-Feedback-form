@@ -24,34 +24,56 @@
 
       <fieldset>
         <legend>Was the porridge</legend>
-        <input type="radio" id="porridge-too-hot" name="porridge" value="too-hot" checked>
-        <label for="porridge-too-hot">Too hot?</label>
-        <input type="radio" id="porridge-too-cold" name="porridge" value="too-cold">
-        <label for="porridge-too-cold">Too cold?</label>
-        <input type="radio" id="porridge-just-right" name="porridge" value="just-right">
-        <label for="porridge-just-right">Just right?</label>
+        <div>
+          <input type="radio" id="porridge-too-hot" name="porridge" value="too-hot" checked>
+          <label for="porridge-too-hot">Too hot?</label>
+        </div>
+        <div>
+          <input type="radio" id="porridge-too-cold" name="porridge" value="too-cold">
+          <label for="porridge-too-cold">Too cold?</label>
+        </div>
+        <div>
+          <input type="radio" id="porridge-just-right" name="porridge" value="just-right">
+          <label for="porridge-just-right">Just right?</label>
+        </div>
       </fieldset>
       <fieldset>
         <legend>Were the beds</legend>
-        <input type="radio" id="beds-too-hard" name="beds" value="too-hard" checked>
-        <label for="beds-too-hard">Too hard?</label>
-        <input type="radio" id="beds-too-soft" name="beds" value="too-soft">
-        <label for="beds-too-soft">Too soft?</label>
-        <input type="radio" id="beds-just-right" name="beds" value="just-right">
-        <label for="beds-just-right">Just right?</label>
+        <div>
+          <input type="radio" id="beds-too-hard" name="beds" value="too-hard" checked>
+          <label for="beds-too-hard">Too hard?</label>
+        </div>
+        <div>
+          <input type="radio" id="beds-too-soft" name="beds" value="too-soft">
+          <label for="beds-too-soft">Too soft?</label>
+        </div>
+        <div>
+          <input type="radio" id="beds-just-right" name="beds" value="just-right">
+          <label for="beds-just-right">Just right?</label>
+        </div>
       </fieldset>
       <fieldset>
         <legend>Describe the chairs (select all you agree with)</legend>
-        <input type="checkbox" id="comfy" name="chairs" value="comfy">
-        <label for="comfy">comfy</label>
-        <input type="checkbox" id="luxurious" name="chairs" value="luxurious">
-        <label for="luxurious">Luxurious</label>
-        <input type="checkbox" id="hi-tec" name="chairs" value="hi-tec">
-        <label for="hi-tec">Hi-tec</label>
-        <input type="checkbox" id="pretty" name="chairs" value="pretty">
-        <label for="pretty">Pretty</label>
-        <input type="checkbox" id="majestic" name="chairs" value="majestic">
-        <label for="majestic">Majestic</label>
+        <div>
+          <input type="checkbox" id="comfy" name="chairs" value="comfy">
+          <label for="comfy">Comfy</label>
+        </div>
+        <div>
+          <input type="checkbox" id="luxurious" name="chairs" value="luxurious">
+          <label for="luxurious">Luxurious</label>
+        </div>
+        <div>
+          <input type="checkbox" id="hi-tec" name="chairs" value="hi-tec">
+          <label for="hi-tec">Hi-tec</label>
+        </div>
+        <div>
+          <input type="checkbox" id="pretty" name="chairs" value="pretty">
+          <label for="pretty">Pretty</label>
+        </div>
+        <div>
+          <input type="checkbox" id="majestic" name="chairs" value="majestic">
+          <label for="majestic">Majestic</label>
+        </div>
       </fieldset>
     </section>
     <section class="form-section">
@@ -59,26 +81,28 @@
        <div class="separator"> 
         <label for="favorite-bear">Who's your favorite bear?</label>
         <select id="favorite-bear" name="favorite-bear">
-          <option>Papa bear</option>
-          <option>Mama bear</option>
-          <option>Junior</option>
-          <option>Dozer</option>
+          <option value="" disabled selected>Please select</option>
+          <option value="papa-bear">Papa bear</option>
+          <option value="mama-bear">Mama bear</option>
+          <option value="junior">Junior</option>
+          <option value="dozer">Dozer</option>
         </select>
        </div>
        <div class="separator">
         <label for="prefered-greeting">Which greeting did you prefer?</label>
         <select id="prefered-greeting" name="prefered-greeting">
-          <option>Wave</option>
-          <option>Friendly greeting</option>
-          <option>Growl</option>
-          <option>Claw marks in the door</option>
+          <option value="" disabled selected>Please select</option>
+          <option value="wave">Wave</option>
+          <option value="friendly-greeting">Friendly greeting</option>
+          <option value="growl">Growl</option>
+          <option value="claw-marks-in-the-door">Claw marks in the door</option>
         </select>
        </div>
     </section>
     <section class="form-section">
       <h2>Any other feedback?</h2>
         <label for="comments">Give us your comments</label>
-        <textarea id="comments" name="comments" ></textarea>
+        <textarea id="comments" name="comments" rows="5"></textarea>
     </section>
     <section class="form-section">       
       <h2>Your details</h2>
